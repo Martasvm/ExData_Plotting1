@@ -9,13 +9,7 @@ time<-strptime(paste, "%d/%m/%Y %H:%M:%S")
 dataplot2<-cbind(time,datadays)
 
 locale <- Sys.getlocale(category = "LC_TIME")
-
-## set English locale in order to have labels printed in English
 Sys.setlocale("LC_TIME", "English")
-
-## ... your code that builds the plot goes here ...
-
-## restore system's original locale
 
 
 png(filename = "plot3.png", width = 480, height = 480)
